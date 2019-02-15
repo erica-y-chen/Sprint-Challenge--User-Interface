@@ -57,6 +57,10 @@ header {
     margin-bottom: 20px;
 }
 
+.contact-header-img {
+
+}
+
 /*-------------------------------------------body------------------------------------------------*/
 
 body {
@@ -124,6 +128,11 @@ p {
     margin-left: 20px;
 }
 
+.contact-top-content {
+    padding: 20px 0 20px 20px;
+    border-bottom: 1px dashed black;
+}
+
 /*-------------------------------------------middle-content------------------------------------------------*/
 .middle-content {
     margin-bottom: 20px;
@@ -185,6 +194,10 @@ p {
     font-family: 'Rubik', sans-serif;
 }
 
+.information-card button:hover {
+    background-color: black;
+    color: white;
+}
 
 /*-------------------------------------------bottom-content------------------------------------------------*/
 .bottom-content {
@@ -222,6 +235,71 @@ footer nav a {
     text-decoration: none;
 }
 
+/*-------------------------------------------form----------------------------------------------------*/
+
+.form {
+    background-color: #f2f2f2; 
+    border-radius: 10px;
+    margin: 30px 20px;
+    padding: 25px;
+
+}
+.contact-form {
+    background-color: #f2f2f2; 
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.contact-form:last-child {
+    margin-bottom: -10px; 
+}
+
+.contact-form label {
+    padding-top: 20px;
+}
+
+.input-label {
+    margin: 6px 0 26px 0; 
+    font-size: 14px;
+    text-align: top;
+    font-weight: bold;
+}
+
+.input-box {
+    margin: 6px 0 26px 0; 
+    font-size: 14px;
+    text-align: top;
+    font-style: oblique;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid grey; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 10px; 
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  input[type=submit]:hover {
+    background-color: #f2f2f2;
+    border: 2px solid black; 
+    color: black; 
+  }
+
+
 /*-------------------------------------------other----------------------------------------------------*/
 .hline {
     width: 100%;
@@ -229,4 +307,13 @@ footer nav a {
     border: none; 
     border-top: 1px dotted grey; 
     margin-top: 10px;
+}
+
+.hline2 {
+    width: 100%;
+    background-color: grey; 
+    border: none; 
+    border-top: 1px dotted grey; 
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
