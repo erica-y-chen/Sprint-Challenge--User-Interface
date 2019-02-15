@@ -28,6 +28,37 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+/*-------------------------------------------header------------------------------------------------*/
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-end; 
+    margin: 20px 0 40px 0; 
+}
+
+.menu-buttons a {
+    text-decoration: none;
+    margin-right: 75px; 
+    color: black;
+}
+
+.menu-buttons a:last-child {
+    margin-right: 45px; 
+}
+
+.menu-buttons a:hover {
+    color: grey; 
+    text-decoration: underline;
+}
+
+.home-header-img {
+    margin-bottom: 20px;
+}
+
+/*-------------------------------------------body------------------------------------------------*/
+
 body {
 	line-height: 1;
 }
@@ -37,11 +68,13 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -71,6 +104,7 @@ p {
     margin: 0 auto;
 }
 
+/*-------------------------------------------top-content------------------------------------------------*/
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -85,6 +119,12 @@ p {
     padding-bottom: 20px;  
 }
 
+.about-top-content {
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+/*-------------------------------------------middle-content------------------------------------------------*/
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -112,6 +152,41 @@ p {
     justify-content: center;
 }
 
+.middle-content-about {
+    margin-bottom: 20px;
+    border-top: 1px dashed black;
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.information-card {
+    margin: 20px; 
+    display: flex;
+    flex-direction: column; 
+    border-bottom: 1px dashed black;
+    width: 360px;
+}
+
+.information-card img {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.information-card button {
+    height: 40px; 
+    width: 130px; 
+    border-radius: 10px;
+    border: 2px solid black;
+    vertical-align: middle;
+    padding: 0;
+    font-size: 16px;
+    margin: 25px 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/*-------------------------------------------bottom-content------------------------------------------------*/
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -126,6 +201,8 @@ p {
     padding-right: 0;
 }
 
+
+/*-------------------------------------------footer----------------------------------------------------*/
 footer {
     width: 100%;
     background: black;
@@ -143,4 +220,13 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*-------------------------------------------other----------------------------------------------------*/
+.hline {
+    width: 100%;
+    background-color: grey; 
+    border: none; 
+    border-top: 1px dotted grey; 
+    margin-top: 10px;
 }
